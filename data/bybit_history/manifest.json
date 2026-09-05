@@ -1,0 +1,24 @@
+{
+  "endpoint": "https://api.bybit.com/v5/market/kline",
+  "generated_at": "2026-09-05T15:53:39.848147+00:00",
+  "outputs": [
+    {
+      "first_ms": 1733011200000,
+      "last_ms": 1767225540000,
+      "path": "data/bybit_history/BTCUSDT_1m_2024-12_2025-12.npz",
+      "rows": 570240,
+      "sha256": "d7aefaafbb43de44c83f97c668789c8739581cb8e6e8741bc0f851e2aafe9d7e",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "first_ms": 1733011200000,
+      "last_ms": 1767225540000,
+      "path": "data/bybit_history/ETHUSDT_1m_2024-12_2025-12.npz",
+      "rows": 570240,
+      "sha256": "fbd525094da41d12084ac3ebd537bb819d7d49de3aa69aa9a8dfc1066352a743",
+      "symbol": "ETHUSDT"
+    }
+  ],
+  "analysis_protocol_sha256": "adeda2e6674e6e6eb8789fa9c9f557e0f06737083b4b971575eedd79f8bb3e11",
+  "download_protocol_sha256": "e4f8e3832f426714ddca0400c8af61c99693fb32438179830ddd9763715f91d6"
+}

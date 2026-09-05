@@ -1,0 +1,31 @@
+{
+  "name": "bybit_level_reaction_v1",
+  "status": "Primary event rules frozen before the primary scan. Matched-control design was frozen after primary output but before control output. Development diagnostic only; not a fill backtest.",
+  "venue": "Bybit USDT linear perpetual",
+  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "data": {
+    "interval_minutes": 1,
+    "start_inclusive": "2024-12-01T00:00:00Z",
+    "development_start": "2025-01-01T00:00:00Z",
+    "development_end_exclusive": "2026-01-01T00:00:00Z",
+    "holdout_policy": "Do not query or evaluate 2026 data until a later combined level plus order-flow rule is frozen."
+  },
+  "levels": {
+    "previous_utc_day_high_low": true,
+    "session_vwap_utc_anchor": true,
+    "confirmed_1h_swing_high_low": {"left_hours": 2, "right_hours": 2, "active_level": "latest confirmed pivot per side"},
+    "volume_profile": "deferred until archived trade validation",
+    "diagonal_trendlines": "excluded from v1"
+  },
+  "event": {
+    "definition": "Current 1m bar trades beyond a pre-existing level and closes back through it.",
+    "max_penetration_atr": 1.0,
+    "static_level_consumption": "one event per unique static level identity",
+    "dynamic_vwap_cooldown_minutes": 30,
+    "entry_proxy": "next 1m open; diagnostic only"
+  },
+  "forward_horizons_minutes": [5, 15, 60],
+  "cost_thresholds_bps": {"maker_entry_taker_exit": 7.5, "taker_entry_taker_exit": 11.0},
+  "matched_control": "For each level event, compare a deterministic non-event minute matched by symbol, calendar month, UTC hour and monthly ATR quintile. Report paired mean excess with bootstrap 95 percent interval.",
+  "reporting": "Report count, gross forward return, MFE, MAE, cost-clearing rate and matched-control excess by symbol, level, side and horizon. No PnL or profitability claim."
+}

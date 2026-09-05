@@ -4,6 +4,9 @@ The current Bybit order-flow research entry specification is documented in
 [`ENTRY_ALGORITHM.md`](ENTRY_ALGORITHM.md).  It remains public-data-only and is
 not a live trading system.
 
+The first causal historical level-location diagnostic is summarized in
+[`reports/level_reaction_report_2025.md`](reports/level_reaction_report_2025.md).
+
 Custom reproducible backtest harness for the Jesse `BBSqueezeTrend` strategy from:
 
 https://jesse.trade/strategies/bbsqueezetrend
