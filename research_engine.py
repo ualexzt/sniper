@@ -62,6 +62,7 @@ class _Position:
     signal_close: float
     initial_stop: float
     stop: float
+    target: float | None = None
     funding: float = 0.0
     entry_fee: float = 0.0
     high_close: float = 0.0
@@ -81,6 +82,10 @@ def run_backtest(
     risk_pct: float = 0.03,
     leverage: float = 1,
     sizing_mode: str = "jesse",
+    stop_atr_mult: float = 1.74,
+    trail_atr_mult: float | None = 3.71,
+    target_atr_mult: float | None = None,
+    max_hold_minutes: float | None = None,
     **_: Any,
 ) -> Dict[str, Any]:
     """Run a long/short one-position OHLC backtest.
@@ -96,11 +101,18 @@ def run_backtest(
     start_ms, end_ms = int(start_ms), int(end_ms)
     for name, value in (("fee", fee), ("slippage_bps", slippage_bps),
                         ("initial", initial), ("risk_pct", risk_pct),
-                        ("leverage", leverage)):
+                        ("leverage", leverage), ("stop_atr_mult", stop_atr_mult)):
         if not math.isfinite(float(value)):
             raise ValueError(f"{name} must be finite")
     if fee < 0 or slippage_bps < 0 or initial <= 0 or risk_pct <= 0 or leverage <= 0:
         raise ValueError("invalid fee, capital, risk, or leverage")
+    if stop_atr_mult <= 0:
+        raise ValueError("stop_atr_mult must be positive")
+    for name, value in (("trail_atr_mult", trail_atr_mult),
+                        ("target_atr_mult", target_atr_mult),
+                        ("max_hold_minutes", max_hold_minutes)):
+        if value is not None and (not math.isfinite(float(value)) or float(value) <= 0):
+            raise ValueError(f"{name} must be positive when set")
     if sizing_mode not in {"jesse", "risk"}:
         raise ValueError("sizing_mode must be 'jesse' or 'risk'")
 
@@ -246,7 +258,7 @@ def run_backtest(
         # A trailing update is caused only by a completed trading-bar signal.
         # It happens before this boundary's entry and intrabar stop checks, but
         # a newly opened position does not consume the same close as a trail.
-        if pos is not None:
+        if pos is not None and trail_atr_mult is not None:
             for j in by_bar.get(i, []):
                 trail_close = (float(signal_close[j]) if signal_close is not None
                                else (float(bar_c[i - 1]) if i > 0 else math.nan))
@@ -257,8 +269,8 @@ def run_backtest(
                 pos.high_close = max(pos.high_close, trail_close)
                 pos.low_close = min(pos.low_close, trail_close)
                 pos.latest_atr = trail_atr
-                candidate = (pos.high_close - 3.71 * trail_atr if pos.side > 0
-                             else pos.low_close + 3.71 * trail_atr)
+                candidate = (pos.high_close - float(trail_atr_mult) * trail_atr if pos.side > 0
+                             else pos.low_close + float(trail_atr_mult) * trail_atr)
                 pos.stop = max(pos.stop, candidate) if pos.side > 0 else min(pos.stop, candidate)
 
         # The current open is the first executable price for a signal at ts.
@@ -273,7 +285,7 @@ def run_backtest(
                 atr = float(entry_atr[j]) if entry_atr is not None else float(satr[j])
                 if not (math.isfinite(sc) and sc > 0 and math.isfinite(atr) and atr > 0):
                     continue
-                stop = sc - 1.74 * atr if action > 0 else sc + 1.74 * atr
+                stop = sc - stop_atr_mult * atr if action > 0 else sc + stop_atr_mult * atr
                 # Jesse's original notional cap uses signal close.  Risk mode
                 # additionally charges a conservative fee/slippage round trip.
                 dist = abs(sc - stop)
@@ -292,7 +304,8 @@ def run_backtest(
                     continue
                 entry_fee = abs(entry * qty) * fee
                 cash -= entry_fee
-                pos = _Position(action, qty, ts, int(st[j]), entry, sc, stop, stop,
+                target = (entry + float(target_atr_mult) * atr if action > 0 else entry - float(target_atr_mult) * atr) if target_atr_mult is not None else None
+                pos = _Position(action, qty, ts, int(st[j]), entry, sc, stop, stop, target,
                                 entry_fee=entry_fee, high_close=entry,
                                 low_close=entry, latest_atr=atr)
                 consumed.add(int(san[j]))
@@ -314,6 +327,20 @@ def run_backtest(
                 raw_exit = min(pos.stop, float(bar_o[i])) if pos.side > 0 else max(pos.stop, float(bar_o[i]))
                 exit_price = raw_exit * (1.0 - slip if pos.side > 0 else 1.0 + slip)
                 close_position(ts, exit_price, "stop")
+
+        # A candle can touch both stop and target.  The stop check is purposely
+        # first, which makes the unknown intrabar path adverse rather than
+        # granting a favourable target fill.
+        if pos is not None and pos.target is not None:
+            target_hit = (pos.side > 0 and float(bar_h[i]) >= pos.target) or (pos.side < 0 and float(bar_l[i]) <= pos.target)
+            if target_hit:
+                raw_exit = max(pos.target, float(bar_o[i])) if pos.side > 0 else min(pos.target, float(bar_o[i]))
+                exit_price = raw_exit * (1.0 - slip if pos.side > 0 else 1.0 + slip)
+                close_position(ts, exit_price, "target")
+
+        if pos is not None and max_hold_minutes is not None and (ts - pos.entry_ts) >= float(max_hold_minutes) * 60_000:
+            exit_price = float(bar_c[i]) * (1.0 - slip if pos.side > 0 else 1.0 + slip)
+            close_position(ts, exit_price, "time_stop")
 
         close_eq = mark(float(bar_c[i]))
         close_peak = max(close_peak, close_eq)
@@ -377,6 +404,7 @@ def run_backtest(
             "bar": "1m OHLC; stops checked using low/high",
             "gap_stop": "worse of stop and open, then adverse slippage",
             "trail": "completed signal close-based trail, active for following minute",
+            "target": "target checked after adverse stop when both can occur in one OHLC candle",
             "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
         },
     }

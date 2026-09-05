@@ -53,3 +53,17 @@ once on a later untouched period.
 `publicTrade` WebSocket events with local receive timestamps.  It is deliberately
 separate from the existing candle backtest, so the old dataset and conclusions
 cannot leak into selection of the new hypothesis.
+
+## Rejected candle-only baseline — 2026-09-05
+
+The pre-declared `trend_conditioned_pullback_development_v1` candidate set was
+run on the 2025 development window with 5.5 bp fee and 5 bp slippage per side,
+1 ATR stop, 1.2 ATR target, and 15-minute time stop.  All four variants were
+negative after costs (net P&L from -9,407 to -9,997 USDT on a 10,000 USDT
+simulation).  None is eligible for holdout, paper, or deployment.  The 2026
+holdout was deliberately not run.
+
+This means that candle-only trend plus EMA-pullback/reclaim is not sufficient
+for our intended scalper.  The next hypothesis must be based on the captured
+L2 state and trade flow, then first replayed with conservative maker-fill
+assumptions.

@@ -65,3 +65,19 @@ def test_anchor_consumed_and_equity_identity():
                           fee=0, slippage_bps=0)
     assert len(r["trades"]) == 1
     assert abs(r["metrics"]["final_equity"] - (r["metrics"]["initial_equity"] + r["metrics"]["net_pnl"])) < 1e-8
+
+
+def test_target_and_time_stop_are_explicit_and_causal():
+    c = candles([(0, 100, 100, 100, 100), (60_000, 100, 102, 99, 101),
+                 (120_000, 101, 101, 100, 100), (180_000, 100, 100, 99, 99)])
+    target = run_backtest(c, sig([(60_000, 1, 1, 8, 100)]), empty_funding(), 0, 180_000,
+                          fee=0, slippage_bps=0, stop_atr_mult=2, trail_atr_mult=None,
+                          target_atr_mult=1)
+    assert target["trades"][0]["exit_label"] == "target"
+    assert target["trades"][0]["exit_price"] == 101
+
+    timed = run_backtest(c, sig([(60_000, 1, 1, 9, 100)]), empty_funding(), 0, 180_000,
+                         fee=0, slippage_bps=0, stop_atr_mult=5, trail_atr_mult=None,
+                         max_hold_minutes=1)
+    assert timed["trades"][0]["exit_label"] == "time_stop"
+    assert timed["trades"][0]["exit_ts"] == 120_000
