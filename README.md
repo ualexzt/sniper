@@ -1,5 +1,9 @@
 # BBSqueezeTrend Research Harness
 
+The current Bybit order-flow research entry specification is documented in
+[`ENTRY_ALGORITHM.md`](ENTRY_ALGORITHM.md).  It remains public-data-only and is
+not a live trading system.
+
 Custom reproducible backtest harness for the Jesse `BBSqueezeTrend` strategy from:
 
 https://jesse.trade/strategies/bbsqueezetrend

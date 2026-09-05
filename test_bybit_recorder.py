@@ -6,7 +6,8 @@ from bybit_recorder import output_path, topics
 def test_topics_are_public_l2_and_trade_streams_only():
     assert topics(("BTCUSDT", "ETHUSDT")) == [
         "orderbook.50.BTCUSDT", "publicTrade.BTCUSDT",
-        "orderbook.50.ETHUSDT", "publicTrade.ETHUSDT",
+        "allLiquidation.BTCUSDT", "orderbook.50.ETHUSDT",
+        "publicTrade.ETHUSDT", "allLiquidation.ETHUSDT",
     ]
     assert all("private" not in topic for topic in topics(("BTCUSDT",)))
 

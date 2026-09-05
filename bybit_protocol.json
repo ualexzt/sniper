@@ -4,7 +4,7 @@
   "venue": "Bybit",
   "category": "linear",
   "symbols": ["BTCUSDT", "ETHUSDT"],
-  "streams_per_symbol": ["orderbook.50", "publicTrade"],
+  "streams_per_symbol": ["orderbook.50", "publicTrade", "allLiquidation"],
   "raw_format": "jsonl; one JSON object per received websocket message",
   "required_local_fields": ["received_ns", "connection_id", "message"],
   "capture": {
@@ -17,7 +17,7 @@
   "hypothesis": {
     "name": "trend_conditioned_pullback",
     "signal_timeframes_minutes": [1, 5],
-    "definition": "A 5-minute directional regime plus a 1-minute pullback and renewed aggressive trade-flow confirmation.",
+    "definition": "A causal liquidity sweep at an objective level, aggressive-flow absorption, then Delta/CVD and L2 reversal confirmation. See ENTRY_ALGORITHM.md.",
     "selection_rule": "Do not select numerical thresholds or symbols after examining the holdout. Freeze them from development data only."
   },
   "execution_assumptions": {

@@ -23,7 +23,8 @@ DEFAULT_SYMBOLS = ("BTCUSDT", "ETHUSDT")
 
 def topics(symbols: tuple[str, ...]) -> list[str]:
     return [topic for symbol in symbols for topic in
-            (f"orderbook.50.{symbol}", f"publicTrade.{symbol}")]
+            (f"orderbook.50.{symbol}", f"publicTrade.{symbol}",
+             f"allLiquidation.{symbol}")]
 
 
 def output_path(root: Path, connection_id: str) -> Path:
