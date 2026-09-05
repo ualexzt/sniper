@@ -9,5 +9,5 @@ services:
     tmpfs:
       - /tmp
     volumes:
-      - ./runtime/bybit_raw:/data
-    command: ["--output", "/data", "--rotate-minutes", "60"]
+      - ./runtime:/runtime
+    command: ["--output", "/runtime/bybit_raw", "--rotate-minutes", "60"]
