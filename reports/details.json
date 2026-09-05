@@ -1,0 +1,1346 @@
+[
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 1.0127278002924813,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 126.28581174704593,
+      "final_equity": 13476.245280324962,
+      "forced_count": 0,
+      "funding": 23.465262887336582,
+      "gross_pnl": 3625.996354959344,
+      "max_drawdown_pct": 0.11095438567102128,
+      "net_pnl": 3476.2452803249616,
+      "period": "2025_published_window",
+      "profit_factor": 2.5770249826079956,
+      "return_pct": 0.3476245280324961,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 15,
+      "trade_count": 12,
+      "win_rate": 0.4166666666666667
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 1.0684955499575528,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 125.27840894782375,
+      "final_equity": 13259.999183991082,
+      "forced_count": 0,
+      "funding": 23.370266708328693,
+      "gross_pnl": 3408.647859647234,
+      "max_drawdown_pct": 0.11627869729162194,
+      "net_pnl": 3259.9991839910817,
+      "period": "2025_published_window",
+      "profit_factor": 2.4117978465562246,
+      "return_pct": 0.32599991839910825,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 15,
+      "trade_count": 12,
+      "win_rate": 0.4166666666666667
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.8855805708680587,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 109.132050333179,
+      "final_equity": 14135.285509062634,
+      "forced_count": 0,
+      "funding": 34.81036926205698,
+      "gross_pnl": 4279.227928657872,
+      "max_drawdown_pct": 0.12823250485702206,
+      "net_pnl": 4135.285509062636,
+      "period": "2025_published_window",
+      "profit_factor": 3.501931522206834,
+      "return_pct": 0.4135285509062634,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 15,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9184754789793856,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 108.44023470644854,
+      "final_equity": 13949.9133653918,
+      "forced_count": 0,
+      "funding": 34.75930630578931,
+      "gross_pnl": 4093.1129064040306,
+      "max_drawdown_pct": 0.13310163147333212,
+      "net_pnl": 3949.913365391793,
+      "period": "2025_published_window",
+      "profit_factor": 3.27215080420955,
+      "return_pct": 0.39499133653917995,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 15,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9435331763455864,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 122.14642249288745,
+      "final_equity": 13768.150997982906,
+      "forced_count": 0,
+      "funding": 26.020551744602415,
+      "gross_pnl": 3916.3179722203913,
+      "max_drawdown_pct": 0.1153309012186726,
+      "net_pnl": 3768.1509979829016,
+      "period": "2025_published_window",
+      "profit_factor": 2.7770123225938166,
+      "return_pct": 0.37681509979829064,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 30,
+      "trade_count": 11,
+      "win_rate": 0.45454545454545453
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9881349982598437,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 121.25875684573401,
+      "final_equity": 13563.991476517256,
+      "forced_count": 0,
+      "funding": 25.95401974335419,
+      "gross_pnl": 3711.204253106356,
+      "max_drawdown_pct": 0.11940702663368294,
+      "net_pnl": 3563.991476517268,
+      "period": "2025_published_window",
+      "profit_factor": 2.6080632007520697,
+      "return_pct": 0.35639914765172565,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 30,
+      "trade_count": 11,
+      "win_rate": 0.45454545454545453
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9811677030575875,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 105.2564754352711,
+      "final_equity": 13603.703973445576,
+      "forced_count": 0,
+      "funding": 25.356679891424122,
+      "gross_pnl": 3734.317128772278,
+      "max_drawdown_pct": 0.13496907165815114,
+      "net_pnl": 3603.703973445583,
+      "period": "2025_published_window",
+      "profit_factor": 2.8734338456848763,
+      "return_pct": 0.36037039734455756,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 30,
+      "trade_count": 10,
+      "win_rate": 0.4
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 1.0226833782971785,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 104.59185349638221,
+      "final_equity": 13425.529285679939,
+      "forced_count": 0,
+      "funding": 25.312933621188883,
+      "gross_pnl": 3555.4340727975023,
+      "max_drawdown_pct": 0.138785199778276,
+      "net_pnl": 3425.5292856799315,
+      "period": "2025_published_window",
+      "profit_factor": 2.6985855003983352,
+      "return_pct": 0.3425529285679938,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 30,
+      "trade_count": 10,
+      "win_rate": 0.4
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 1.0280813220813039,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 119.38549905915984,
+      "final_equity": 13441.737967028843,
+      "forced_count": 0,
+      "funding": 25.618716960769273,
+      "gross_pnl": 3586.7421830487674,
+      "max_drawdown_pct": 0.11622825884706596,
+      "net_pnl": 3441.7379670288383,
+      "period": "2025_published_window",
+      "profit_factor": 2.651353689660175,
+      "return_pct": 0.3441737967028844,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 60,
+      "trade_count": 11,
+      "win_rate": 0.45454545454545453
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 1.0808284235421033,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 118.51355311595972,
+      "final_equity": 13242.791488466644,
+      "forced_count": 0,
+      "funding": 25.54851862727682,
+      "gross_pnl": 3386.8535602098855,
+      "max_drawdown_pct": 0.12063587332439188,
+      "net_pnl": 3242.791488466649,
+      "period": "2025_published_window",
+      "profit_factor": 2.48901860537636,
+      "return_pct": 0.32427914884666453,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 60,
+      "trade_count": 11,
+      "win_rate": 0.45454545454545453
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.8619411966625596,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 105.96743093345961,
+      "final_equity": 13999.540739474538,
+      "forced_count": 0,
+      "funding": 34.69422055804937,
+      "gross_pnl": 4140.202390966042,
+      "max_drawdown_pct": 0.11692329334779748,
+      "net_pnl": 3999.540739474533,
+      "period": "2025_published_window",
+      "profit_factor": 3.4327232689109097,
+      "return_pct": 0.39995407394745386,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 60,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.8949947143283169,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 105.28921381883343,
+      "final_equity": 13814.829061678987,
+      "forced_count": 0,
+      "funding": 34.54446516690571,
+      "gross_pnl": 3954.66274066472,
+      "max_drawdown_pct": 0.1208040894801811,
+      "net_pnl": 3814.8290616789805,
+      "period": "2025_published_window",
+      "profit_factor": 3.2182193602430895,
+      "return_pct": 0.3814829061678988,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 60,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9315671755202442,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 103.3993065790032,
+      "final_equity": 13454.983617749405,
+      "forced_count": 0,
+      "funding": 52.65491384462123,
+      "gross_pnl": 3611.0378381730325,
+      "max_drawdown_pct": 0.12735958178623297,
+      "net_pnl": 3454.983617749408,
+      "period": "2025_published_window",
+      "profit_factor": 3.243720087522209,
+      "return_pct": 0.34549836177494053,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 240,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9727378355952657,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 102.73479139575078,
+      "final_equity": 13276.836089274308,
+      "forced_count": 0,
+      "funding": 52.5011246892066,
+      "gross_pnl": 3432.0720053592704,
+      "max_drawdown_pct": 0.13119607755835386,
+      "net_pnl": 3276.836089274313,
+      "period": "2025_published_window",
+      "profit_factor": 3.0411956110067946,
+      "return_pct": 0.32768360892743087,
+      "signal_mode": "forming_anchor",
+      "start": "2025-01-01",
+      "tf_minutes": 240,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9324463432844552,
+      "cost_case": "baseline_2bps",
+      "end": "2026-01-01",
+      "fees": 104.0844328942112,
+      "final_equity": 13568.362162549636,
+      "forced_count": 0,
+      "funding": 49.70525669850419,
+      "gross_pnl": 3722.151852142341,
+      "max_drawdown_pct": 0.1110223165775385,
+      "net_pnl": 3568.3621625496253,
+      "period": "2025_published_window",
+      "profit_factor": 3.2933717502240696,
+      "return_pct": 0.35683621625496365,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 240,
+      "trade_count": 10,
+      "win_rate": 0.5
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.9726572011325932,
+      "cost_case": "stress_10bps",
+      "end": "2026-01-01",
+      "fees": 103.4183094257662,
+      "final_equity": 13388.503637559084,
+      "forced_count": 0,
+      "funding": 49.58091046730851,
+      "gross_pnl": 3541.502857452154,
+      "max_drawdown_pct": 0.11493613934733207,
+      "net_pnl": 3388.5036375590794,
+      "period": "2025_published_window",
+      "profit_factor": 3.0852561743870193,
+      "return_pct": 0.3388503637559084,
+      "signal_mode": "closed_anchor_once",
+      "start": "2025-01-01",
+      "tf_minutes": 240,
+      "trade_count": 10,
+      "win_rate": 0.4
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5568599614085887,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 65.3356555453088,
+      "final_equity": 12230.244642529835,
+      "forced_count": 0,
+      "funding": 26.946253334983997,
+      "gross_pnl": 2322.526551410126,
+      "max_drawdown_pct": 0.11495037847755166,
+      "net_pnl": 2230.2446425298335,
+      "period": "2026_author_window",
+      "profit_factor": 4.677304588871109,
+      "return_pct": 0.2230244642529835,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 15,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5781048498862724,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 65.05277775980068,
+      "final_equity": 12113.06432149209,
+      "forced_count": 0,
+      "funding": 26.80941781662879,
+      "gross_pnl": 2204.9265170685185,
+      "max_drawdown_pct": 0.11848707587621095,
+      "net_pnl": 2113.0643214920888,
+      "period": "2026_author_window",
+      "profit_factor": 4.355239020951149,
+      "return_pct": 0.21130643214920886,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 15,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.6138189647596499,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 57.66001956566893,
+      "final_equity": 11772.39672707012,
+      "forced_count": 0,
+      "funding": 23.171201512044604,
+      "gross_pnl": 1853.2279481478326,
+      "max_drawdown_pct": 0.08966470852828823,
+      "net_pnl": 1772.3967270701191,
+      "period": "2026_author_window",
+      "profit_factor": 6.521970349997074,
+      "return_pct": 0.17723967270701202,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 15,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.639399789915108,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 57.43539912696567,
+      "final_equity": 11671.761725414814,
+      "forced_count": 0,
+      "funding": 23.068183114724306,
+      "gross_pnl": 1752.2653076564957,
+      "max_drawdown_pct": 0.09096592118124239,
+      "net_pnl": 1671.7617254148058,
+      "period": "2026_author_window",
+      "profit_factor": 5.996975834225024,
+      "return_pct": 0.16717617254148132,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 15,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.4850655363104745,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 65.78590391405612,
+      "final_equity": 13180.005467243886,
+      "forced_count": 1,
+      "funding": 37.89417832770071,
+      "gross_pnl": 3283.6855494856504,
+      "max_drawdown_pct": 0.11068698955433502,
+      "net_pnl": 3180.0054672438937,
+      "period": "2026_author_window",
+      "profit_factor": 6.8526481294617225,
+      "return_pct": 0.3180005467243885,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 30,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.49490617232790013,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 65.50206916272307,
+      "final_equity": 13054.349825299245,
+      "forced_count": 1,
+      "funding": 37.67023865185641,
+      "gross_pnl": 3157.522133113826,
+      "max_drawdown_pct": 0.11424532397491964,
+      "net_pnl": 3054.3498252992463,
+      "period": "2026_author_window",
+      "profit_factor": 6.388819860994552,
+      "return_pct": 0.3054349825299245,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 30,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.47660311997688887,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 57.77357275801281,
+      "final_equity": 12444.399889457993,
+      "forced_count": 1,
+      "funding": 33.459406622777216,
+      "gross_pnl": 2535.632868838781,
+      "max_drawdown_pct": 0.09177470111222706,
+      "net_pnl": 2444.399889457991,
+      "period": "2026_author_window",
+      "profit_factor": 8.620643406866424,
+      "return_pct": 0.24443998894579932,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 30,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.4874742788753435,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 57.5466460147224,
+      "final_equity": 12338.28576048458,
+      "forced_count": 1,
+      "funding": 33.2827552710922,
+      "gross_pnl": 2429.1151617703877,
+      "max_drawdown_pct": 0.09308157683979906,
+      "net_pnl": 2338.285760484573,
+      "period": "2026_author_window",
+      "profit_factor": 7.993542156799979,
+      "return_pct": 0.23382857604845797,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 30,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5169370634085961,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 64.75013899205925,
+      "final_equity": 12926.61218652234,
+      "forced_count": 1,
+      "funding": 37.71876645143471,
+      "gross_pnl": 3029.081091965836,
+      "max_drawdown_pct": 0.11929109415993466,
+      "net_pnl": 2926.6121865223417,
+      "period": "2026_author_window",
+      "profit_factor": 5.825290272320889,
+      "return_pct": 0.29266121865223393,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 60,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5288628549642255,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 64.46552130239431,
+      "final_equity": 12803.306667481846,
+      "forced_count": 1,
+      "funding": 37.49545729614929,
+      "gross_pnl": 2905.267646080394,
+      "max_drawdown_pct": 0.1227723416982108,
+      "net_pnl": 2803.3066674818506,
+      "period": "2026_author_window",
+      "profit_factor": 5.455347374586532,
+      "return_pct": 0.28033066674818463,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 60,
+      "trade_count": 7,
+      "win_rate": 0.7142857142857143
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.49149005049493,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 57.404918957106354,
+      "final_equity": 12371.448710660457,
+      "forced_count": 1,
+      "funding": 34.374363141900005,
+      "gross_pnl": 2463.227992759462,
+      "max_drawdown_pct": 0.09150147240167698,
+      "net_pnl": 2371.448710660455,
+      "period": "2026_author_window",
+      "profit_factor": 8.452199581345338,
+      "return_pct": 0.23714487106604576,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 60,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5033184855063204,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 57.18010958934215,
+      "final_equity": 12265.855498117597,
+      "forced_count": 1,
+      "funding": 34.19726511396591,
+      "gross_pnl": 2357.2328728209095,
+      "max_drawdown_pct": 0.09280291611884339,
+      "net_pnl": 2265.8554981176017,
+      "period": "2026_author_window",
+      "profit_factor": 7.829562133241904,
+      "return_pct": 0.2265855498117597,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 60,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.544188035321601,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 57.021758976505936,
+      "final_equity": 12241.839624044756,
+      "forced_count": 1,
+      "funding": 34.4450649699558,
+      "gross_pnl": 2333.3064479912146,
+      "max_drawdown_pct": 0.09209088231744851,
+      "net_pnl": 2241.839624044753,
+      "period": "2026_author_window",
+      "profit_factor": 8.063206591621832,
+      "return_pct": 0.2241839624044757,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 240,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.5590689444291018,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 56.80185688398394,
+      "final_equity": 12137.278392586051,
+      "forced_count": 1,
+      "funding": 34.2739505569391,
+      "gross_pnl": 2228.3542000269654,
+      "max_drawdown_pct": 0.09476227220246267,
+      "net_pnl": 2137.278392586042,
+      "period": "2026_author_window",
+      "profit_factor": 7.459240442663801,
+      "return_pct": 0.21372783925860506,
+      "signal_mode": "forming_anchor",
+      "start": "2026-01-01",
+      "tf_minutes": 240,
+      "trade_count": 6,
+      "win_rate": 0.8333333333333334
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.6872745879777942,
+      "cost_case": "baseline_2bps",
+      "end": "2026-07-17",
+      "fees": 55.137026043705745,
+      "final_equity": 11299.076079762423,
+      "forced_count": 1,
+      "funding": 32.30133275373618,
+      "gross_pnl": 1386.5144385598642,
+      "max_drawdown_pct": 0.12127678999545088,
+      "net_pnl": 1299.0760797624223,
+      "period": "2026_author_window",
+      "profit_factor": 3.439583249063409,
+      "return_pct": 0.12990760797624223,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 240,
+      "trade_count": 6,
+      "win_rate": 0.6666666666666666
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.7243894928969803,
+      "cost_case": "stress_10bps",
+      "end": "2026-07-17",
+      "fees": 54.92207917780696,
+      "final_equity": 11202.007788504216,
+      "forced_count": 1,
+      "funding": 32.13678433428579,
+      "gross_pnl": 1289.0666520163172,
+      "max_drawdown_pct": 0.1251499703641654,
+      "net_pnl": 1202.0077885042244,
+      "period": "2026_author_window",
+      "profit_factor": 3.148119096125796,
+      "return_pct": 0.12020077885042157,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-01-01",
+      "tf_minutes": 240,
+      "trade_count": 6,
+      "win_rate": 0.6666666666666666
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.040715179872464,
+      "final_equity": 9570.797461049508,
+      "forced_count": 0,
+      "funding": -4.385459566302099,
+      "gross_pnl": -414.54728333692174,
+      "max_drawdown_pct": 0.05637092053044139,
+      "net_pnl": -429.2025389504921,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.042920253895049276,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 15,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.04105386783614,
+      "final_equity": 9540.410671947402,
+      "forced_count": 0,
+      "funding": -4.3865292675153,
+      "gross_pnl": -444.93480345228056,
+      "max_drawdown_pct": 0.05791511848903627,
+      "net_pnl": -459.5893280526014,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.045958932805259756,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 15,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.038207121871817,
+      "final_equity": 9563.585545553367,
+      "forced_count": 0,
+      "funding": -4.2848335428678,
+      "gross_pnl": -421.6610808676279,
+      "max_drawdown_pct": 0.05333180549448632,
+      "net_pnl": -436.41445444663196,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04364144544466331,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 15,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.038520577767407,
+      "final_equity": 9533.198889050727,
+      "forced_count": 0,
+      "funding": -4.285820563313,
+      "gross_pnl": -452.04841093481787,
+      "max_drawdown_pct": 0.05487721603723003,
+      "net_pnl": -466.8011109492723,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04668011109492731,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 15,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.040836838678008,
+      "final_equity": 9571.177276414239,
+      "forced_count": 0,
+      "funding": -4.382739420926699,
+      "gross_pnl": -414.1646261680124,
+      "max_drawdown_pct": 0.055838759218186346,
+      "net_pnl": -428.82272358576364,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04288227235857611,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 30,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.041171750995346,
+      "final_equity": 9540.790288760449,
+      "forced_count": 0,
+      "funding": -4.3838091221399,
+      "gross_pnl": -444.55234861069357,
+      "max_drawdown_pct": 0.057382944515780764,
+      "net_pnl": -459.209711239549,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.0459209711239551,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 30,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.038286469281942,
+      "final_equity": 9563.716621656911,
+      "forced_count": 0,
+      "funding": -4.2819623700744005,
+      "gross_pnl": -421.52705424388034,
+      "max_drawdown_pct": 0.05471451057637886,
+      "net_pnl": -436.2833783430879,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04362833783430886,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 30,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.038611546519192,
+      "final_equity": 9533.329873205625,
+      "forced_count": 0,
+      "funding": -4.282949390519599,
+      "gross_pnl": -451.91446463837764,
+      "max_drawdown_pct": 0.05625979069001304,
+      "net_pnl": -466.6701267943772,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.046667012679437514,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 30,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.041503525546354,
+      "final_equity": 9569.560847291319,
+      "forced_count": 0,
+      "funding": -4.3835340735698995,
+      "gross_pnl": -415.78118325670346,
+      "max_drawdown_pct": 0.05659328792615316,
+      "net_pnl": -430.43915270867996,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04304391527086804,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 60,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.041844386949084,
+      "final_equity": 9539.171752529668,
+      "forced_count": 0,
+      "funding": -4.3846037747831,
+      "gross_pnl": -446.1710068581664,
+      "max_drawdown_pct": 0.058137770772217295,
+      "net_pnl": -460.82824747033237,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04608282474703318,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 60,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.03911486732526,
+      "final_equity": 9563.478422618437,
+      "forced_count": 0,
+      "funding": -4.2843912722751,
+      "gross_pnl": -421.7668537865135,
+      "max_drawdown_pct": 0.054771305611888386,
+      "net_pnl": -436.52157738156365,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04365215773815634,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 60,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.039440005384783,
+      "final_equity": 9533.090278777776,
+      "forced_count": 0,
+      "funding": -4.285378292720299,
+      "gross_pnl": -452.15565950956136,
+      "max_drawdown_pct": 0.056316706227049436,
+      "net_pnl": -466.90972122222587,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.046690972122222396,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 60,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.038770680502243,
+      "final_equity": 9563.36790981191,
+      "forced_count": 0,
+      "funding": -4.2863203688944,
+      "gross_pnl": -421.8796398764827,
+      "max_drawdown_pct": 0.05333395577553351,
+      "net_pnl": -436.63209018809056,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.043663209018809046,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 240,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.039083928736275,
+      "final_equity": 9532.980342448056,
+      "forced_count": 0,
+      "funding": -4.2873073893396,
+      "gross_pnl": -452.2678810125467,
+      "max_drawdown_pct": 0.05487944801479186,
+      "net_pnl": -467.01965755194334,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04670196575519436,
+      "signal_mode": "forming_anchor",
+      "start": "2026-07-17",
+      "tf_minutes": 240,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "baseline_2bps",
+      "end": "2026-09-01",
+      "fees": 19.03714815772303,
+      "final_equity": 9564.427536533884,
+      "forced_count": 0,
+      "funding": -3.7026382736674996,
+      "gross_pnl": -420.2379535820618,
+      "max_drawdown_pct": 0.055905549189053584,
+      "net_pnl": -435.5724634661173,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04355724634661162,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 240,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "assumptions": {
+      "bar": "1m OHLC; stops checked using low/high",
+      "funding_mark": "event assigned to containing minute; minute open proxy; positive rate costs longs",
+      "gap_stop": "worse of stop and open, then adverse slippage",
+      "trail": "completed signal close-based trail, active for following minute"
+    },
+    "row": {
+      "best_trade_net_share": 0.0,
+      "cost_case": "stress_10bps",
+      "end": "2026-09-01",
+      "fees": 19.037466169522126,
+      "final_equity": 9534.043034376822,
+      "forced_count": 0,
+      "funding": -3.704070330589,
+      "gross_pnl": -450.62356978424634,
+      "max_drawdown_pct": 0.05745049205505747,
+      "net_pnl": -465.9569656231795,
+      "period": "2026_later_validation",
+      "profit_factor": 0.0,
+      "return_pct": -0.04659569656231777,
+      "signal_mode": "closed_anchor_once",
+      "start": "2026-07-17",
+      "tf_minutes": 240,
+      "trade_count": 2,
+      "win_rate": 0.0
+    }
+  }
+]

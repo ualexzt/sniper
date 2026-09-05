@@ -1,0 +1,38 @@
+{
+  "name": "bybit_l2_scalping_research_v1",
+  "status": "pre-data frozen capture protocol; public-data-only; no live orders",
+  "venue": "Bybit",
+  "category": "linear",
+  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "streams_per_symbol": ["orderbook.50", "publicTrade"],
+  "raw_format": "jsonl; one JSON object per received websocket message",
+  "required_local_fields": ["received_ns", "connection_id", "message"],
+  "capture": {
+    "minimum_sessions": 14,
+    "minimum_hours_per_symbol": 168,
+    "reconnect_backoff_seconds": [1, 2, 4, 8, 15],
+    "rotation_minutes": 60,
+    "integrity": "Retain every snapshot and delta verbatim. Report reconnects, sequence resets, timestamp reversals, and no-message intervals over 5 seconds."
+  },
+  "hypothesis": {
+    "name": "trend_conditioned_pullback",
+    "signal_timeframes_minutes": [1, 5],
+    "definition": "A 5-minute directional regime plus a 1-minute pullback and renewed aggressive trade-flow confirmation.",
+    "selection_rule": "Do not select numerical thresholds or symbols after examining the holdout. Freeze them from development data only."
+  },
+  "execution_assumptions": {
+    "default_maker_fee_bps_per_side": 2.0,
+    "default_taker_fee_bps_per_side": 5.5,
+    "maker_fill_policy": "Queue-aware or zero-fill when queue position cannot be evidenced.",
+    "emergency_exit": "taker, reduce-only, with observed book-walk slippage",
+    "funding": "Charge official funding events at the position notional.",
+    "prohibited": ["martingale", "averaging down", "unauthenticated order placement"]
+  },
+  "promotion_gates": [
+    "No silent data gaps in selected sessions",
+    "Deterministic replay and fill tests pass",
+    "Positive development and untouched-holdout portfolio results after costs",
+    "Paper lifecycle reconciliation is complete",
+    "Explicit user approval before any live-trading work"
+  ]
+}

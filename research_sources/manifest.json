@@ -1,0 +1,60 @@
+{
+  "retrieved_utc": "2026-09-05T13:26:34.329690+00:00",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/utils.py",
+      "path": "research_sources/utils.py",
+      "sha256": "d41b1d9e95e0a4f1b8a9daa17df3065758b9305e24026471e4b395569ce071da"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/strategies/Strategy.py",
+      "path": "research_sources/strategies__Strategy.py",
+      "sha256": "0c015286c48ee4ac314ce264c8f6e24f1d6073266e581816ed778857d4e64ebb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/services/candle_service.py",
+      "path": "research_sources/services__candle_service.py",
+      "sha256": "f449a0f2544a2f3eb732213717ba6664e85c0dfc0c94c819920e435e5253d949"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/bollinger_bands.py",
+      "path": "research_sources/indicators__bollinger_bands.py",
+      "sha256": "63dbfd0c3c43045f032a56ce0b16055032453ed00d35148786110f84bbceff59"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/keltner.py",
+      "path": "research_sources/indicators__keltner.py",
+      "sha256": "0a329fee3d6f61f7a6969a2688c562511072ca7b7c8ba7fe8611ae538354a244"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/atr.py",
+      "path": "research_sources/indicators__atr.py",
+      "sha256": "398a12258dbc59b350c8c9ed8a1199a57cd89e7503c7dcd3fa002030c77df06c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/adx.py",
+      "path": "research_sources/indicators__adx.py",
+      "sha256": "0e6d64d7ca4f2fcc7d2e49566751bccdcbd01f41570c9802e830a626ab3744d4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/linearreg_slope.py",
+      "path": "research_sources/indicators__linearreg_slope.py",
+      "sha256": "b75291d486b33ffba5f6ca497d1efcbf909cc3f60fd13b0401ee8a109de0fcb2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/ema.py",
+      "path": "research_sources/indicators__ema.py",
+      "sha256": "27e88b8b6ababf964fa0733d7a510e2d02c3775a1332cbb8fff58681af8e1c7f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/sma.py",
+      "path": "research_sources/indicators__sma.py",
+      "sha256": "e0b556ab48db62be00999fc65de0d3c7069c19feb2fd31569ff63caf1e159381"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jesse-ai/jesse/master/jesse/indicators/ma.py",
+      "path": "research_sources/indicators__ma.py",
+      "sha256": "a936413bd7dd757e2912dcaf01dbebd09ca2ba7f5ef4b2463f56f672a4afc3a9"
+    }
+  ]
+}

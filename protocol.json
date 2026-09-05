@@ -1,0 +1,42 @@
+{
+  "strategy": "BBSqueezeTrend",
+  "source": "https://jesse.trade/strategies/bbsqueezetrend",
+  "status": "pre-results frozen research protocol; custom simulator, not native Jesse",
+  "market": "Binance USD-M ETHUSDT perpetual",
+  "data_start_inclusive": "2024-12-01T00:00:00Z",
+  "target_data_end_exclusive": "2026-09-01T00:00:00Z",
+  "periods": [
+    {"name": "2025_published_window", "start": "2025-01-01", "end": "2026-01-01"},
+    {"name": "2026_author_window", "start": "2026-01-01", "end": "2026-07-17"},
+    {"name": "2026_later_validation", "start": "2026-07-17", "end": "2026-09-01"}
+  ],
+  "period_policy": "Independent flat-start runs with 10000 USDT; warmup from prior data. Force-close at period end and report separately. Later validation only if complete real data exists; not proof of author-untouched holdout.",
+  "trading_timeframes_minutes": [15, 30, 60, 240],
+  "anchor_timeframe_minutes": 240,
+  "parameters": {
+    "bb_period": 29, "bb_dev": 1.82, "kc_mult": 1.56,
+    "slope_period": 11, "adx_threshold": 19.11, "min_squeeze_bars": 4,
+    "atr_stop_mult": 1.74, "atr_trail_mult": 3.71
+  },
+  "signal_modes": ["forming_anchor", "closed_anchor_once"],
+  "signal_semantics": {
+    "forming_anchor": "At each completed trading bar, use completed anchor history plus current partial anchor, or final anchor at boundary. Pending fire remains until signal disappears; consume anchor timestamp only when entering, matching supplied code.",
+    "closed_anchor_once": "At each anchor boundary evaluate just-closed anchor, assign eligible entry to close of first subsequent trading bar, as described by author. Evaluate ADX/slope on same frozen closed anchor. For trading TF=anchor this introduces a full-anchor wait, explicitly reported. Trail uses latest closed anchor ATR at each trading close."
+  },
+  "execution": {
+    "initial_balance_usdt": 10000,
+    "sizing": "corrected Jesse risk_to_qty semantics, 3 percent of available cash, 1x cap; fee keyword fixed; conservative quantity floor 0.001 ETH",
+    "leverage": 1,
+    "risk_fraction": 0.03,
+    "fee_per_side": 0.0005,
+    "base_slippage_bps_per_side": 2,
+    "stress_slippage_bps_per_side": 10,
+    "entry": "next 1m open after trading-bar signal close; adverse slippage",
+    "stop": "existing stop checked on every 1m high/low; gap uses worse open; adverse slippage",
+    "trailing": "ratchet on completed trading-bar closes; only active for following minute",
+    "funding": "actual historical funding rates at their recorded timestamps; traded 1m open used as notional proxy instead of exact mark price; carried positions charged before entries at same timestamp",
+    "limits": "No order-book queue/depth, liquidation, latency distribution, or exact mark-price funding simulation. 1x notional cap. Not an exact replay of author's unknown exchange/config/version."
+  },
+  "selection_policy": "No parameter optimization. Show all requested TF and both semantics. Comparing TF consumes this dataset for selection; best TF is exploratory, not confirmed out-of-sample winner.",
+  "validation": "Require checksum-verified downloads, full-minute continuity, finite valid OHLC, funding coverage; meaningful synthetic event tests; indicator source audit; causal prefix-invariance checks. Report actual data availability without substituting generated candles."
+}
