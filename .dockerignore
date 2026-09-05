@@ -1,0 +1,10 @@
+.git
+.agents
+.codex
+.pytest_cache
+__pycache__
+*.py[cod]
+.venv
+data
+reports
+runtime

@@ -1,0 +1,13 @@
+services:
+  recorder:
+    build: .
+    image: sniper-recorder:local
+    container_name: sniper-recorder
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - ./runtime/bybit_raw:/data
+    command: ["--output", "/data", "--rotate-minutes", "60"]

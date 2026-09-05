@@ -3,4 +3,5 @@ __pycache__/
 data/raw/
 data/*.npz
 data/bybit_raw*/
+runtime/
 reports/equity/
