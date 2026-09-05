@@ -1,0 +1,13 @@
+{
+  "name": "l2_absorption_candidate_v1",
+  "status": "pre-results frozen diagnostic label; not a trading signal",
+  "bucket_seconds": 15,
+  "lookback_buckets": 20,
+  "delta_multiple_of_trailing_median_abs": 2.0,
+  "max_range_multiple_of_trailing_median": 0.5,
+  "min_relevant_top5_depth_multiple_of_trailing_median": 1.0,
+  "forward_horizon_seconds": 60,
+  "long_candidate": "negative aggressive Delta, compressed range, and bid top-5 depth at least its trailing median",
+  "short_candidate": "positive aggressive Delta, compressed range, and ask top-5 depth at least its trailing median",
+  "limits": "Candidate labels do not prove passive orders were filled rather than cancelled/replaced. A later delta reversal and book response are required before any entry hypothesis."
+}

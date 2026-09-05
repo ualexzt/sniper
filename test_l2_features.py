@@ -30,3 +30,5 @@ def test_snapshot_delta_and_signed_trade_features(tmp_path: Path):
     assert out["cvd_notional"] == 51
     assert out["mid"] == 100
     assert out["spread_bps"] == 200
+    assert out["top5_bid_notional"] == 396
+    assert out["top5_ask_notional"] == 303

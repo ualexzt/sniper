@@ -49,6 +49,7 @@ class Book:
     def metrics(self, received_ns: int) -> dict[str, float | int | None]:
         if not self.bids or not self.asks:
             return {"mid": None, "spread_bps": None, "top5_imbalance": None,
+                    "top5_bid_notional": None, "top5_ask_notional": None,
                     "book_age_ms": None, "book_cts_ms": self.cts_ms}
         bid, ask = max(self.bids), min(self.asks)
         mid = (bid + ask) / 2.0
@@ -61,6 +62,8 @@ class Book:
             "mid": mid,
             "spread_bps": (ask - bid) / mid * 10_000.0,
             "top5_imbalance": (bid_notional - ask_notional) / total if total else 0.0,
+            "top5_bid_notional": bid_notional,
+            "top5_ask_notional": ask_notional,
             "book_age_ms": (received_ns - self.received_ns) / 1_000_000.0 if self.received_ns is not None else None,
             "book_cts_ms": self.cts_ms,
         }
@@ -141,7 +144,8 @@ def write_features(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = ["symbol", "bucket_received_ns", "trade_count", "buy_notional", "sell_notional",
               "delta_notional", "cvd_notional", "open", "high", "low", "close", "mid",
-              "spread_bps", "top5_imbalance", "book_age_ms", "book_cts_ms"]
+              "spread_bps", "top5_imbalance", "top5_bid_notional", "top5_ask_notional",
+              "book_age_ms", "book_cts_ms"]
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
